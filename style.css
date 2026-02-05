@@ -1,0 +1,44 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Parallax Sections */
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Background Images */
+.bg1 { background-image: url('how-to-make-the-most-out-of-an-interview.jpg'); }
+.bg2 { background-image: url('64e69f71607b05d852db97ae_CPO.jpeg'); }
+.bg3 { background-image: url('Lena-Mahfouf-s-explique-sur-son-absence-des-reseaux-sociaux.jpg'); }
+
+/* Caption Styling */
+.caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.caption .border {
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+/* Content Sections */
+.section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
