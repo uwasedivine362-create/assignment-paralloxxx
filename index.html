@@ -1,115 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Portfolio</title>
-
-  <!-- Fonts & Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<title>Parallax Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="top-nav">
+  <div class="nav-container">
+    
+    <!-- Left Links -->
+    <div class="nav-left">
+      <a href="#home"> <i class="fa fa-home" ></i>HOME</a>
+      <a href="#about"> <i class="fa fa-user" ></i>ABOUT</a>
+      <a href="#portfolio"> <i class="fa fa-th" ></i>PORTFOLIO</a>
+      <a href="#contact"> <i class="fa fa-envelope" ></i>CONTACT</a>
+      <a href="#search" class="search-button"><i class="fa fa-search icon" ></i></a>
+      </div>
 
-<!-- HERO / PARALLAX -->
-<header class="hero parallax" style="background-image:url('did.jfif');">
-  <nav class="navbar">
-    <ul class="nav-menu">
-      <li><i class="fa-solid fa-house"></i> HOME</li>
-      <li><i class="fa-solid fa-user"></i> ABOUT</li>
-      <li><i class="fa-solid fa-table-cells"></i> PORTFOLIO</li>
-      <li><i class="fa-solid fa-envelope"></i> CONTACT</li>
-    </ul>
-    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-  </nav>
+    <!-- Right Icon -->
+    <div class="nav-right">
+      
+      
+    </div>
 
-  <div class="hero-content">
-    <div class="logo-box">MY WEBSITE LOGO</div>
+    <!-- Mobile Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#home"><i class="fa fa-home"></i>HOME</a>
+    <a href="#about"><i class="fa fa-home"></i>ABOUT</a>
+    <a href="#portfolio"><i class="fa fa-home"></i>PORTFOLIO</a>
+    <a href="#contact"><i class="fa fa-phone"></i>CONTACT</a>
   </div>
 </header>
 
-<!-- ABOUT SECTION -->
-<section class="about-section content-wrapper" id="about-section">
-  <h2>ABOUT ME</h2>
-  <p class="tagline">I love photography</p>
-  <div class="profile-grid">
-    <div class="profile-card">
-      <p class="name-header">👤 Diva</p>
-      <div class="image-container">
-        <img src="Screenshot 2024-05-29 101632.png" alt="Profile">
-      </div>
-    </div>
-    <div class="bio-text">
-      <p>Welcome to my portfolio! I am a photographer and visual storyteller capturing memorable moments.</p>
-    </div>
+<!-- Parallax Section 1 -->
+<section id="home" class="parallax bg1">
+  <div class="center-text">
+    <h1>PARALLAX WEBSITE</h1>
   </div>
 </section>
 
-<!-- SKILLS SECTION -->
-<section class="skills-section content-wrapper">
-  <p class="tagline center-text">I'm really good at:</p>
-  <div class="skill-item"><p>📷 Photography</p><div class="progress-bg"><div class="progress-fill" style="width:90%;">90%</div></div></div>
-  <div class="skill-item"><p>💻 Web Design</p><div class="progress-bg"><div class="progress-fill" style="width:85%;">85%</div></div></div>
-  <div class="skill-item"><p>🖼️ Photoshop</p><div class="progress-bg"><div class="progress-fill" style="width:75%;">75%</div></div></div>
-</section>
 
-<!-- STATISTICS -->
-<footer class="stats-bar">
-  <div class="stat-box"><h3>14+</h3><p>Partners</p></div>
-  <div class="stat-box"><h3>55+</h3><p>Projects Done</p></div>
-  <div class="stat-box"><h3>89+</h3><p>Happy Clients</p></div>
-  <div class="stat-box"><h3>150+</h3><p>Meetings</p></div>
-</footer>
 
-<!-- PORTFOLIO -->
-<section class="portfolio-section content-wrapper" id="portfolio">
-  <h2 class="center-text">PORTFOLIO</h2>
-  <p class="subtext center-text"><em>Here are some of my latest work examples.</em></p>
+<!-- Footer -->
+<footer class="footer-container">
+  <a href="#home" class="to-top-btn"><i class="fa fa-arrow-up"></i> To the top</a>
 
-  <div class="portfolio-grid">
-    <div class="grid-item"><img src="tata.jfif" alt="Nature"></div>
-    <div class="grid-item"><img src="fif.jfif" alt="Coffee"></div>
-    <div class="grid-item"><img src="did.jfif" alt="Bear"></div>
-    <div class="grid-item"><img src="hair.jfif" alt="Ocean"></div>
-    <div class="grid-item"><img src="dudu.jfif" alt="Typewriter"></div>
-    <div class="grid-item"><img src="twin.jpg" alt="Train"></div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact-hero parallax" style="background-image:url('mt kgl.jpeg');">
-  <div class="hero-overlay"><h1>CONTACT</h1></div>
-</section>
-
-<section class="contact-container content-wrapper">
-  <div class="contact-content">
-    <div class="contact-visual">
-      <img src="mt kgl.jpeg" alt="Office Location">
-    </div>
-    <div class="contact-details">
-      <p>📍 Kigali</p>
-      <p>📞 Phone: +0781943309</p>
-      <p>✉️ Email: diva@email.com</p>
-
-      <p class="form-invite">Swing by for a cup of ☕, or leave me a note:</p>
-      <form class="contact-form">
-        <div class="input-row">
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-        </div>
-        <input type="text" placeholder="Message" required>
-        <div class="button-wrapper">
-          <button type="submit" class="send-btn"><span>➤</span> SEND MESSAGE</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <a href="#" class="top-link"><i class="fa fa-arrow-up"></i> To the top</a>
   <div class="social-icons">
     <i class="fa fa-facebook-official"></i>
     <i class="fa fa-instagram"></i>
@@ -118,7 +61,8 @@
     <i class="fa fa-twitter"></i>
     <i class="fa fa-linkedin"></i>
   </div>
-  <p class="powered-text">Powered by <a href="#">w3.css</a></p>
+
+  <ul><li><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></li></ul>
 </footer>
 
 </body>
