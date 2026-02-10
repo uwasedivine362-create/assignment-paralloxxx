@@ -1,0 +1,656 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+ 
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+
+}
+/* Navbar like W3Schools Parallax */
+.top-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+/* Left Links */
+.nav-left a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.nav-left a:hover {
+  background: #ddd;
+}
+
+/* Right Search Icon */
+#search{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+.navbar .search-button{
+ float: right;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  background: white;
+  width: 100%;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-left, .nav-right {
+    display:flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 10%;
+  background: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+#contact h3 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #777;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Map */
+.map-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Right Side Content */
+.col-form {
+  text-align: left;
+}
+
+/* Contact details */
+.contact-details p {
+  font-size: 16px;
+  font-style: normal;
+  color: #444;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.contact-details i:hover{
+  color: #000;
+}
+
+/* Invite text */
+.invite-text {
+  margin: 20px 0;
+  
+}
+
+/* Inputs layout */
+.row-inputs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #000;
+}
+
+/* Button */
+.button-container {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.send-btn {
+  background: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.send-btn i {
+  margin-right: 6px;
+}
+
+.send-btn:hover {
+  background: rgb(160, 158, 158);
+  color:#000
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row-inputs {
+    flex-direction: column;
+  }
+}
+
+
+/* About Section */
+.about-section {
+  padding: 80px 15%;
+  background: #f9f9f9;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+/* Left Column: Image */
+.about-left {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.circle-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.6; 
+  transition: opacity 0.3s ease;
+  border: 1px solid #b3aeae;
+  
+}
+.circle-img:hover{
+  
+  opacity: 1;
+}
+#pic{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+/* Right Column: Text */
+.about-right {
+  flex: 2 1 400px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Container Spacing */
+.skills-section {
+  padding: 64px 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Heading - Template Style */
+.center-text {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+/*Skill*/
+.skill {
+  margin-bottom: 25px;
+}
+
+/* Label & Icon Spacing */
+.skill span {
+  display: block;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 4px; /* Essential for original look */
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #000;
+}
+
+.skill span i {
+  margin-right: 16px; /* Space between icon and text */
+  width: 20px;       /* Keeps icons aligned vertically */
+  text-align: center;
+}
+
+/* The Progress Bar (Gray Background) */
+.skill-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 38px;
+}
+
+/* The Fill (Dark Gray Background) */
+.skill-fill {
+  height: 100%;
+  background-color: #616161;
+  color: #fff;
+  text-align: center;
+  line-height: 38px; /* Centers text vertically */
+  font-size: 15px;
+}
+
+/* --- RESPONSIVE SETTINGS --- */
+
+/* For Tablets and Mobile */
+@media (max-width: 768px) {
+  .center-text {
+    letter-spacing: 2px; /* Reduce spacing slightly so it fits */
+    font-size: 1.2rem;
+  }
+  
+  .skill span {
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+
+  .skill-bar {
+    height: 30px; /* Thinner bars on small screens */
+  }
+
+  .skill-fill {
+    line-height: 30px;
+  }
+}
+
+/*Stats bar */
+.stats-bar {
+  background-color: #555555; /* The dark gray color from your image */
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.stat-item h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Responsive adjustment for phones */
+@media (max-width: 768px) {
+  .stats-bar {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+
+/* Parallax Effect */
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Images */
+.bg1 { background-image: url("fif.jfif"); }
+.bg2 { background-image: url("did.jfif"); }
+.bg3 { background-image: url("dudu.jfif"); }
+
+
+
+/* Center Text */
+.center-text h1 {
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 20px 40px;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+/* Content Sections */
+.content {
+  padding: 80px 20%;
+  text-align: center;
+  background: white;
+}
+
+.content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #555;
+}
+
+.btn{
+  align-items: center;
+  margin-top: 30px;
+}
+.button{
+  background-color: rgb(245, 240, 234);
+  padding: 20px;
+  border: none;
+  }
+  .button:hover{
+    background-color: #aca9a9;
+  }
+
+  /* Portfolio */
+.portfolio-container {
+  padding: 64px 16px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Titles */
+.portfolio-title {
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.portfolio-subtitle {
+  color: #777;
+  margin-bottom: 32px;
+}
+
+/* The Grid Container */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* The Item (Set to 25% for 4 images per row) */
+.portfolio-item {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px 16px 8px;
+}
+
+/* The Image - Matches Parallax Template Style */
+.portfolio-item img {
+  width: 100%;
+  height: 200px; /* Use a fixed height with px */
+  object-fit: cover; /* This keeps the image from stretching */
+  cursor: pointer;
+  transition: 0.4s;
+  display: block;
+}
+
+/* Hover Effect */
+.portfolio-item img:hover {
+  filter: grayscale(0%);
+  opacity: 0.8;
+}
+
+/* Responsive: 2 images per row on tablets, 1 on mobile */
+@media (max-width: 800px) {
+  .portfolio-item { flex: 50%; max-width: 50%; }
+}
+@media (max-width: 600px) {
+  .portfolio-item { flex: 100%; max-width: 100%; }
+}
+
+/* Button */
+.load-more-btn {
+  margin-top: 32px;
+  padding: 12px 24px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+}
+.load-more-btn:hover { background-color: #ccc; }
+
+
+/* Footer Container */
+.footer-container {
+  padding: 64px 16px;
+  background-color: gray; /* Solid light gray background */
+  color: #fff;
+  text-align: center;
+}
+.footer-container:hover{
+  background-color:#000;
+}
+
+/* To the Top Button */
+.to-top-btn {
+  display: inline-block;
+  background-color:white; /* Light gray button background */
+  padding: 12px 24px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.to-top-btn:hover {
+  background-color: #ccc; /* Darker gray on hover */
+  color: #000;
+}
+
+/* Social Media Icons */
+.social-icons {
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+}
+
+.social-icons i {
+ color: white;
+ cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: gray; /* Brightens on hover */
+}
+
+/* Footer Link styling */
+.footer-container p {
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.footer-container a {
+  color: gray;
+  text-decoration: none;
+ }
+
+ .footer-container li a{
+  color: white;
+  text-decoration: underline;
+ }
+
+ .footer-container ul{
+  list-style: none;
+ }
+ .footer-container li a:hover{
+  color: green;
+ }
+
+
+/* --- RESPONSIVE SETTINGS --- */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 48px 16px;
+  }
+  
+  .social-icons {
+    font-size: 20px; /* Smaller icons for small screens */
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .content {
+    padding: 60px 10%;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
+.picture{
+   border-radius:50%;
+   justify-items: center;
+}
+
+/* Update this to remove the 15% side padding */
+.about-section {
+  padding: 80px 0; /* Vertical padding only */
+  background: #f9f9f9;
+  width: 100%;
+}
+
+/* Use this wrapper inside your sections to center text */
+.about-content, .portfolio-inner, .contact-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px; /* Small padding so text doesn't touch screen edges on mobile */
+}
+
+/* Remove the 20% padding here as well */
+.content {
+  padding: 80px 0;
+  text-align: center;
+  background: white;
+  width: 100%;
+}
+
+
+
+
+
+
